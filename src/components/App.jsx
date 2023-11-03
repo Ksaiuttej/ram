@@ -10,14 +10,14 @@ import Random from './Random';
 import Search from './Search';
 import ItemDetail from './ItemDetail';
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <div>
-      <Router basename="/ram">
+      <Router>
         <Routes>
-          <Route exact path="/ram" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<Tips />} />
           <Route path="/random" element={<Random />} />
